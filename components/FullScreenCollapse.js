@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 
 import { Collapse } from 'react-bootstrap'
 import { useClickAway } from 'react-use'
+
+import Icon from './Icon'
+
 import styles from './FullScreenCollapse.module.scss'
 
 function FullScreenCollapse (props) {
@@ -21,9 +24,11 @@ function FullScreenCollapse (props) {
 
         <div ref={ref}>
           {title &&
-            <div className={`${styles.header} bg-light`}>
+            <div className={styles.header}>
               <div>{title}</div>
-              <button aria-label="close" className="btn btn-close text-dark" onClick={onClose}></button>
+              <button aria-label="close" className="btn text-white-50" onClick={onClose}>
+                <Icon name="close"/>
+              </button>
             </div>
           }
 
