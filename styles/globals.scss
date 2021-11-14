@@ -1,0 +1,12 @@
+// Bootstrap
+@import './configs/bootstrap/_variables.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import './configs/bootstrap/_overrides.scss';
+
+// Global settings
+@import './configs/_fonts.scss';
+@import './configs/_variables.scss';
+@import './configs/_base.scss';
+
+@import './utils/_mixins.scss';
+
